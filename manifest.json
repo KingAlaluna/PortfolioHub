@@ -1,0 +1,25 @@
+{
+  "lang": "uk-UK",
+  "name": "PortfolioHub",
+  "short_name": "PortfolioHub",
+  "description": "PortfolioHub — збірка всіх моїх проектів на GitHub. З детальним описом, посиланнями на кожен проект та його вихідний код. Також є детальний опис моїх навичок та мій Telegram контакт. Найбільш корисний для IT роботодавців та фрилансерів, а також людей які цікавляться/мають щось спільне з IT.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#0a0a0f",
+  "theme_color": "#0a0a0f",
+  "icons": [
+    {
+      "src": "img/icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "img/icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

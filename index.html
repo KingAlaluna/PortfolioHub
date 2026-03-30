@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PortfolioHub</title>
+  <meta name="description" content="PortfolioHub — збірка всіх моїх проектів на GitHub. З детальним описом, посиланнями на кожен проект та його вихідний код. Також є детальний опис моїх навичок та мій Telegram контакт. Найбільш корисний для IT роботодавців та фрилансерів, а також людей які цікавляться/мають щось спільне з IT.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.json">
+  
+  <!--styles-->
+  <link rel="stylesheet" href="css/light-theme.css">
+  <link rel="stylesheet" href="css/dark-theme.css">
+  <link rel="stylesheet" href="css/main-style.css">
+</head>
+
+<body class="root">
+  <header class="header">
+    <h1 class="logo-text"><span>Portfolio</span>Hub</h1>
+    <nav class="nav">
+      <button aria-label="Мої проєкти" class="btn active" data-type="page" data-page="my-project">
+        <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21H4C3.46957 21 2.96086 20.7893 2.58579 20.4142C2.21071 20.0391 2 19.5304 2 19V5C2 4.46957 2.21071 3.96086 2.58579 3.58579C2.96086 3.21071 3.46957 3 4 3H9L11 6H20C20.5304 6 21.0391 6.21071 21.4142 6.58579C21.7893 6.96086 22 7.46957 22 8V19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Мої проєкти</span>
+      </button>
+      <span class="line"></span>
+      <button aria-label="Про мене" class="btn" data-type="page" data-page="about-me">
+        <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+          <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Про мене</span>
+      </button>
+      <span class="line"></span>
+      <button aria-label="Змінити тему" class="btn theme" data-type="theme">
+        <svg class="svg dark-theme" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <svg class="svg light-theme" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="12" cy="12" r="5"/>
+          <path d="M12,1 12,3 M12,23 12,21 M1,12 3,12 M21,12 23,12" />
+          <path d="M12,1 12,3 M12,23 12,21 M1,12 3,12 M21,12 23,12" transform="rotate(45, 12, 12)" />
+        </svg>
+        <span>Змінити тему</span>
+      </button>
+    </nav>
+  </header>
+  
+  <main class="main">
+    <!-- general text-->
+    <div class="pages active" data-text="generalText">
+      <!--content adds js-->
+    </div>
+    
+    <!-- page my project-->
+    <div class="pages active" data-page="my-project" data-text="myProjectsText">
+      <!--content adds js-->
+    </div>
+    
+    <!--page about me-->
+    <div class="pages" data-page="about-me" data-text="aboutMeText">
+      <!--content adds js-->
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="logo-wrap">
+      <img class="logo" src="img/logo.svg" alt="Моє лого">
+      <img class="logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Лого GitHub">
+      <img class="logo mit" src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="Знак ліцензії MIT">
+    </div>
+    <h2>Всі мої (завершені) проекти розміщені на GitHub під ліцензією MIT.</h2>
+    <h3>Коротка інформація та посиланя на мої проекти:</h3>
+    <div class="pages active" data-text="myProjectsShortText">
+      <!--content adds js-->
+    </div>
+    <h2>Мої контакти:</h2>
+    <h3>Вам потрібно зробити сайт чи хочете запропонувати вакансію? Напишіть мені!</h3>
+    <div class="my-contacts-wrap">
+      <a href="https://t.me/Viktor_2352" target="_blank" rel="noopener noreferrer">
+        <img class="logo" src="img/notMyLogo/telegram.svg" alt="Лого Telegram">
+      </a>
+    </div>
+    <div class="copy-wrap">
+      <img class="logo" src="img/logo.svg" alt="Моє лого">
+      <span>&copy; PortfolioHub 2026.</span>
+    </div>
+  </footer>
+  
+  
+<!--js-->
+<script type="module" src="js/logic/mainLogic.js"></script>
+
+<!--sw-->
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', async () => {
+      try {
+        const reg = await navigator.serviceWorker.register('sw.js');
+      } catch (err) {
+        console.error('Помилка SW:', err);
+      }
+    });
+  }
+</script>
+</body>
+
+</html>

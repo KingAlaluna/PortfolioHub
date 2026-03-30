@@ -1,0 +1,12 @@
+[data-theme="dark"] {
+  --bg: #0a0a0f;
+  --bg-2: hsla(0, 0%, 100%, 0.1);
+  --bg-3: hsla(0, 0%, 40%, 0.4);
+  
+  --border: 1px solid hsla(0, 0%, 100%, 0.5);
+  
+  --text: hsla(0, 0%, 90%, 1);
+  --text-2: hsla(120, 100%, 60%, 1);
+  --text-3: hsla(0, 100%, 60%, 1);
+  --text-4: hsla(0, 0%, 60%, 1);
+}
