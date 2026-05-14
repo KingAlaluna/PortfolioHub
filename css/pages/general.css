@@ -1,0 +1,8 @@
+.projects-details-wrap,
+.about-me-wrap {
+  width: 100%;
+  height: max-content;
+  /*display: flex;
+  /*align-items: center;*
+  flex-direction: column;*/
+}

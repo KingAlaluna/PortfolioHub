@@ -1,0 +1,135 @@
+.footer {
+  width: 100%;
+  height: max-content;
+  padding: 1rem;
+  border-top: var(--border);
+  margin-top: 1rem;
+  
+  * {
+    color: var(--text-4);
+  }
+  
+  .logo-wrap,
+  .my-contacts-wrap,
+  .copy-wrap {
+    width: max-content;
+    height: max-content;
+    flex-direction: row;
+    
+    .logo {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 0.8rem;
+      background: var(--bg-2);
+      margin: 0 1rem 0 0;
+      
+      &.mit {
+        width: auto;
+      }
+    }
+  }
+  
+  .copy-wrap {
+    margin: 3rem 0 0 0;
+  }
+  
+  .pages {
+    margin: 0 0 3rem 0;
+  }
+}
+
+
+
+.footer-copy-wrap {
+  height: max-content;
+  width: 100%;
+  border-top: var(--border);
+  padding: 2rem var(--padding);
+  margin-top: 1rem;
+  
+  * {
+    color: var(--footer-copy-txt);
+  }
+  
+  a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  
+  .all-my-projects-wrap {
+    height: max-content;
+    
+    .labels-wrap {
+      height: max-content;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      
+      .type,
+      .status {
+        display: inline-block;
+        padding: 0.2rem 1rem;
+        border: var(--border);
+        border-radius: var(--radius);
+        text-transform: uppercase;
+        font-size: 0.7rem;
+      }
+      
+      .type {
+        background: var(--project-type-bg);
+      }
+      
+      .status {
+        &.alpha {
+          color: var(--status-alpha-color);
+          background: var(--status-alpha-bg);
+          border-color: var(--status-alpha-border-color);
+        }
+        &.beta {
+          color: var(--status-beta-color);
+          background: var(--status-beta-bg);
+          border-color: var(--status-beta-border-color);
+        }
+      }
+    }
+  }
+  
+  
+  .logo-wrap,
+  .my-contacts-wrap,
+  .copy-wrap {
+    width: max-content;
+    max-width: 100%;
+    height: max-content;
+    flex-direction: row;
+    
+    .logo {
+      width: 3rem;
+      height: 3rem;
+      border-radius: var(--radius);
+      background: var(--footer-copy-logo-bg);
+      margin: 0 1rem 0 0;
+      
+      &.mit {
+        width: auto;
+      }
+    }
+  }
+  
+  .copy-wrap {
+    margin: 3rem 0 0 0;
+  }
+  
+  .wrap-my-project {
+    margin: 0 0 3rem 0;
+    width: 100%;
+    height: max-content;
+    
+    ul {
+      display: grid;
+      grid-template: auto / repeat(auto-fill, minmax(16rem, 1fr));
+    }
+  }
+}
+

@@ -1,32 +1,10 @@
-import {marked} from 'https://cdn.jsdelivr.net/npm/marked/lib/marked.esm.js';
+import '../../sw-init.js';
+import './footer-copy.js';
+import './pages/projects-details.js';
+import './pages/about-me.js';
 
-import {texts} from '../data/texts.js';
 
-
-//config
-//const i = (id) => document.getElementById(id);
-const c = (classis) => document.querySelectorAll(`.${classis}`);
-
-const html = {
-  btn: c('btn'),
-  pages: c('pages'),
-  
-  HTML: document.documentElement,
-};
-
-//dangerouslySetInnerHTML: { __html: window.marked.parse(props.text) },
-function pagesAddText() {
-  html.pages.forEach(e => {
-    const dataText = e.dataset.text;
-    if (dataText) {
-      const standard = marked.parse(texts[dataText]);
-      const noP = standard.replace(/<p>|<\/p>/g, '');
-      
-      e.innerHTML = (dataText == 'myProjectsShortText' ? noP : standard);
-    }
-  });
-}
-pagesAddText();
+import {html} from '../data/config.js';
 
 
 function pagesDisplay(page) {
@@ -63,6 +41,3 @@ html.btn.forEach(e => {
     }
   });
 });
-
-//const rawHtml = marked.parse(markdownText);
-//const cleanHtml = rawHtml.replace(/<p>|<\/p>/g, '');

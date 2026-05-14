@@ -1,0 +1,27 @@
+[data-theme="dark"] {
+  --bg: #0a0a0f;
+  --footer-copy-logo-bg: hsla(0, 0%, 100%, 0.1);
+  --header__nav-bg: hsla(0, 0%, 100%, 0.1);
+  --bg-3: hsla(0, 0%, 40%, 0.4);
+  
+  --border: 1px solid hsla(0, 0%, 100%, 0.5);
+  
+  --text: hsla(0, 0%, 90%, 1);
+  --text-2: hsla(120, 100%, 60%, 1);
+  --text-3: hsla(0, 100%, 60%, 1);
+  --footer-copy-txt: hsla(0, 0%, 60%, 1);
+  
+  
+  
+  /*projects*/
+  --project-type-bg: var(--black-850);
+  
+  --status-alpha-color: var(--red-400);
+  --status-alpha-bg: var(--black-850);
+  --status-alpha-border-color: var(--red-400);
+  
+  --status-beta-color: var(--yellow-400);
+  --status-beta-bg: var(--black-850);
+  --status-beta-border-color: var(--yellow-400);
+  
+}

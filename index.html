@@ -5,14 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PortfolioHub</title>
-  <meta name="description" content="PortfolioHub — збірка всіх моїх проектів на GitHub. З детальним описом, посиланнями на кожен проект та його вихідний код. Також є детальний опис моїх навичок та мій Telegram контакт. Найбільш корисний для IT роботодавців та фрилансерів, а також людей які цікавляться/мають щось спільне з IT.">
-  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <meta name="description" content="PortfolioHub — збірка всіх моїх проектів на GitHub, Cloudflare, та інших платформах. З детальним описом, посиланнями на кожен проект та його вихідний код. Також є детальний опис моїх навичок та мій Telegram контакт. Найбільш корисний для IT роботодавців та фрилансерів, а також людей які цікавляться/мають щось спільне з IT.">
+  <link rel="icon" href="img/my-logo/logo.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.json">
   
   <!--styles-->
-  <link rel="stylesheet" href="css/light-theme.css">
-  <link rel="stylesheet" href="css/dark-theme.css">
+  <link rel="stylesheet" href="css/themes/general.css">
+  <link rel="stylesheet" href="css/themes/light.css">
+  <link rel="stylesheet" href="css/themes/dark.css">
+  
+  <link rel="stylesheet" href="css/utils.css">
+  
   <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer-copy.css">
+  
+  <link rel="stylesheet" href="css/pages/general.css">
 </head>
 
 <body class="root">
@@ -51,60 +59,52 @@
   <main class="main">
     <!-- general text-->
     <div class="pages active" data-text="generalText">
-      <!--content adds js-->
+      <h2>Інформація нижче буде найбільш корисною для ІТ-рекрутерів та розробників, які оцінюють технічну частину моїх проєктів.</h2>
     </div>
     
     <!-- page my project-->
-    <div class="pages active" data-page="my-project" data-text="myProjectsText">
+    <div class="pages active" data-page="my-project" data-text="myProjectsText" id="my-projects-wrap">
       <!--content adds js-->
     </div>
     
     <!--page about me-->
-    <div class="pages" data-page="about-me" data-text="aboutMeText">
+    <div class="pages" data-page="about-me" data-text="aboutMeText" id="about-me-wrap">
       <!--content adds js-->
     </div>
   </main>
   
-  <footer class="footer">
+  <footer class="footer-copy-wrap">
     <div class="logo-wrap">
-      <img class="logo" src="img/logo.svg" alt="Моє лого">
+      <img class="logo" src="img/my-logo/logo.svg" alt="Моє лого">
       <img class="logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="Лого GitHub">
       <img class="logo mit" src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="Знак ліцензії MIT">
     </div>
     <h2>Всі мої (завершені) проекти розміщені на GitHub під ліцензією MIT.</h2>
     <h3>Коротка інформація та посиланя на мої проекти:</h3>
-    <div class="pages active" data-text="myProjectsShortText">
-      <!--content adds js-->
+    
+    
+    <div class="all-my-projects-wrap" id="all-my-projects-wrap">
+      <!--content add js-->
     </div>
+    
+    
     <h2>Мої контакти:</h2>
     <h3>Вам потрібно зробити сайт чи хочете запропонувати вакансію? Напишіть мені!</h3>
     <div class="my-contacts-wrap">
       <a href="https://t.me/Viktor_2352" target="_blank" rel="noopener noreferrer">
-        <img class="logo" src="img/notMyLogo/telegram.svg" alt="Лого Telegram">
+        <img class="logo" src="img/not-my-logo/telegram.svg" alt="Лого Telegram">
       </a>
     </div>
     <div class="copy-wrap">
-      <img class="logo" src="img/logo.svg" alt="Моє лого">
-      <span>&copy; PortfolioHub 2026.</span>
+      <img class="logo" src="img/my-logo/logo.svg" alt="Моє лого">
+      <span>&copy; PortfolioHub 2026 | v1.1.0.</span>
     </div>
   </footer>
   
   
 <!--js-->
-<script type="module" src="js/logic/mainLogic.js"></script>
+<script type="module" src="js/logic/main-logic.js"></script>
 
-<!--sw-->
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', async () => {
-      try {
-        const reg = await navigator.serviceWorker.register('sw.js');
-      } catch (err) {
-        console.error('Помилка SW:', err);
-      }
-    });
-  }
-</script>
 </body>
 
 </html>
